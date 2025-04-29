@@ -1,0 +1,162 @@
+/* Ensures the carousel container has proper spacing */
+#testimonial-carousel {
+  width: 100%;
+  margin: 0 auto; /* Centers the carousel */
+}
+
+/* Styling each testimonial card */
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px; /* Ensures cards aren't too wide */
+  margin: 10px auto; /* Adds spacing between cards */
+}
+
+/* Quote styling */
+.quote {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+/* Testimonial info container */
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Testimonial person image */
+.testimonials-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Customer info container */
+.info-customer {
+  text-align: left;
+}
+
+/* Name in testimonial */
+.name-testimonial {
+  font-weight: 600;
+}
+
+/* Customer descriptor */
+.customer-name {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Star rating image */
+._5star.mt-10 {
+  width: 100px;
+  margin-top: 10px;
+}
+
+/* Circle in subtitle */
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #5271FF;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Subtitle wrap */
+.subtitle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Name subtitle */
+.name-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Heading with margin */
+.heading.mt-20 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Centered text */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .splide__slide {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .splide__slide {
+    padding: 15px;
+  }
+
+  .splide__arrow {
+    display: none;
+  }
+}
+
+.splide__pagination {
+  bottom: -20px;
+}
+
+.splide__pagination__page {
+  background: grey;
+}
+
+.splide__pagination__page.is-active {
+  background: var(--primary);
+}
+
+/* Additional styles for testimonials section */
+.testimonials-white-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space evenly */
+}
+
+/* Force cards to match height */
+.splide__track {
+  overflow: hidden;
+}
+
+.splide__list {
+  display: flex;
+  height: 100%;
+}
+
+/* Ensure content fills available space */
+.splide__slide {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+/* Main content area should fill available space */
+.splide__slide p {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
