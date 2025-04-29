@@ -66,7 +66,7 @@
           <div data-hover="true" data-delay="0" data-w-id="04d46f31-0e13-3cdd-8195-376a9fc27c86" class="dropdown w-dropdown">
             <div class="wbs-nav-link-dark w-dropdown-toggle">
               <div class="w-icon-dropdown-toggle"></div>
-              <div>ADHD Services</div>
+              <div>Services</div>
             </div>
             <nav class="wbs-dropdown-list w-dropdown-list">
               <a id="service-modal-open-adhd-treatment" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Treatment Sessions</a>
@@ -74,6 +74,7 @@
             </nav>
           </div>
           <a href="#section-benefits-of-adhd-treatment" class="wbs-nav-link-dark w-nav-link">Benefits of ADHD Treatment</a>
+          <a href="#section-testimonials" class="wbs-nav-link-dark w-nav-link">Testimonials</a>
           <div class="book-an-appointment-mobile">
             <a href="https://clientportal.us.zandahealth.com/clientportal/rootsandtales/AppointmentBooking/ClientAppointment" class="wbs-button-primary-1 w-button">Book an Appointment</a>
           </div>
@@ -151,17 +152,27 @@
               </div>
             </div>
           </div>
-          <div id="contact-form-hero" data-w-id="2df654c2-d02f-3dfb-3659-3bec6dec4b15" style="opacity:0" class="wbs-hero-4-image-wrap w-node-_2df654c2-d02f-3dfb-3659-3bec6dec4b15-f2ae1fda">
+          <div id="contact-form-hero" data-w-id="2df654c2-d02f-3dfb-3659-3bec6dec4b15" style="opacity:0" class="wbs-hero-4-image-wrap w-node-e1f6ae20-8021-92a8-e287-343b3d881626-4a04ebe3">
             <div class="wbs-hero-subscribe w-form">
-              <form id="wf-form-Subscribe-form" name="wf-form-Subscribe-form" data-name="Subscribe form" method="get" class="wbs-subscribe-input-group" data-wf-page-id="6796aec0af888815f2ae1fda" data-wf-element-id="2df654c2-d02f-3dfb-3659-3bec6dec4b17"><input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Your Email (Required)" type="email" id="Email-2" required=""><input class="wbs-form-subscribe-input w-input" maxlength="256" name="Name-3" data-name="Name 3" placeholder="Your Name (Required)" type="text" id="Name-3" required=""><input class="wbs-form-subscribe-input w-input" maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="Your Phone Number (Required)" type="tel" id="Phone-2" required=""><textarea id="Message-2" name="Message-2" maxlength="5000" data-name="Message 2" placeholder="Your Message" class="wbs-form-subscribe-input text-area w-input"></textarea><input type="submit" data-wait="Please wait..." class="wbs-button-primary-1 wbs-form-button w-button" value="Get a Free Consultation"></form>
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;">
+                  <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email 2" placeholder="Your Email (Required)" type="email" id="email" required>
+                <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name" required>
+                <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone" required>
+                <textarea placeholder="Your Message" maxlength="5000" id="Message-2" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
+                <input type="submit" data-wait="Please wait..." class="wbs-button-primary-1 wbs-form-button w-button" " value="Get a Free Consultation">
+              </form>
+              <div id="w-node-_6676a220-ecd8-a96b-b7cb-f2d49e52ad75-4a04ebe3" class="wbs-spacing-30"></div>
               <div class="wbs-success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
               <div class="wbs-error-message w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
+                <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment">book an appointment directly here</button>.</div>
               </div>
             </div>
-            <div data-w-id="7009da1f-769c-390f-1f99-3356fbd4691c" style="opacity:0" class="wbs-display-image-container"><img src="images/6796aec0af888815f2ae1ffb_file-p-500.webp" loading="lazy" alt="" class="wbs-step-4-image"></div>
           </div>
         </div>
       </div>
@@ -243,7 +254,7 @@
       </div>
     </div>
   </div>
-  <div data-w-id="44ac7ca4-3fac-327c-8789-6e838c58432a" style="opacity:0" class="wbs-section-dark">
+  <div data-w-id="44ac7ca4-3fac-327c-8789-6e838c58432a"  id="section-testimonials" style="opacity:0" class="wbs-section-dark">
     <div class="wbs-container-5">
       <div class="wbs-testimonial-component">
 
@@ -531,7 +542,8 @@
         </p>
         <div class="wbs-footer-simple-links">
           <a href="#section-our-services" class="wbs-footer-link">ADHD Services</a>
-          <a href="#" class="wbs-footer-link">Benefits of ADHD Treatment</a>
+          <a href="#section-benefits-of-adhd-treatment" class="wbs-footer-link">Benefits of ADHD Treatment</a>
+          <a href="#section-testimonials" class="wbs-footer-link">Testimonials</a>
         </div>
         <div class="wbs-hero-client-grid logo-grid">
           <a href="https://www.psychologytoday.com/ca/therapists/roots-and-tales-clinic-richmond-hill-on/1278486" class="w-inline-block"><img sizes="(max-width: 1600px) 100vw, 1600px" srcset="images/pt-p-500.webp 500w, images/pt-p-800.webp 800w, images/pt-p-1080.webp 1080w, images/pt.webp 1600w" alt="" src="images/pt.webp" loading="lazy" class="wbs-client-logo"></a>
@@ -584,8 +596,8 @@
         <h6 class="wbs-feature-title color-secondary">Let's Help Your Child get the Tools They Need to Succeed</h6>
   
         <div class="wbs-hero-subscribe w-form">
-          <form name="adhd-treatment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-            <input type="hidden" name="form-name" value="adhd-treatment">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
             <p style="display:none;">
               <label>Don't fill this out if you're human: <input name="bot-field"></label>
             </p>
@@ -649,8 +661,8 @@
         <h6 class="wbs-feature-title color-secondary">Take the First Step to Understanding Your Child's Needs</h6>
   
         <div class="wbs-hero-subscribe w-form">
-          <form name="adhd-assessment" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-            <input type="hidden" name="form-name" value="adhd-assessment">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
             <p style="display:none;">
               <label>Don't fill this out if you're human: <input name="bot-field"></label>
             </p>
@@ -687,7 +699,7 @@
         <h6 class="wbs-feature-title color-primary-darker">Let's Connect you with the Right Therapist for Your Child's Well-Being</h6>
 
         <div class="wbs-hero-subscribe w-form">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
             <input type="hidden" name="form-name" value="contact">
             <p style="display:none;">
               <label>Don't fill this out if you're human: <input name="bot-field"></label>
