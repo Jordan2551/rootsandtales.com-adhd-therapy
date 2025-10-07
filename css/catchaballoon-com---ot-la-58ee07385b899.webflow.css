@@ -144,6 +144,18 @@ strong {
   height: 1.875rem;
 }
 
+.wbs-spacing-40 {
+  height: 2.5rem;
+}
+
+.wbs-spacing-50 {
+  height: 3.125rem;
+}
+
+.wbs-spacing-60 {
+  height: 3.75rem;
+}
+
 .wbs-success-message {
   color: #fff;
   text-align: center;
