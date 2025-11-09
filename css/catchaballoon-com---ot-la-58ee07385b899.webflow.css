@@ -2009,6 +2009,121 @@ strong {
 }
 
 
+/* How It Works Section Styles */
+.how-it-works-component {
+  padding: 60px 0;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  bottom: 60px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--flowstica-webflow-library--color-primary) 0%, var(--flowstica-webflow-library--color-secondary) 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 4px solid white;
+}
+
+.step-1 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+}
+
+.step-2 {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.step-3 {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.timeline-content {
+  flex: 1;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.timeline-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+  position: relative;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+}
+
+.step-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--flowstica-webflow-library--black);
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.step-description:last-child {
+  margin-bottom: 0;
+}
+
+.how-it-works-cta {
+  text-align: center;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .specialists-grid {
@@ -2035,6 +2150,40 @@ strong {
   
   .specialist-name {
     font-size: 22px;
+  }
+  
+  .timeline-container::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+  }
+  
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+  
+  .timeline-content {
+    margin-left: 20px;
+  }
+  
+  .timeline-card {
+    padding: 20px;
+  }
+  
+  .timeline-card::before {
+    left: -10px;
+    top: 20px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+  }
+  
+  .step-title {
+    font-size: 20px;
   }
   
   .qualification-header {
