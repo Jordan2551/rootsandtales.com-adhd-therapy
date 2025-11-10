@@ -260,7 +260,7 @@ strong {
   grid-row-gap: 40px;
   flex-wrap: wrap;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: center;
   place-items: center;
@@ -2009,6 +2009,12 @@ strong {
 }
 
 
+/* Logo size adjustment */
+.wbs-logo {
+  max-width: 180px;
+  height: auto;
+}
+
 /* How It Works Section Styles */
 .how-it-works-component {
   padding: 60px 0;
@@ -2196,5 +2202,3 @@ strong {
     align-self: flex-start;
   }
 }
-
-
