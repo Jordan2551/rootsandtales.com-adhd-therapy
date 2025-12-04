@@ -8,23 +8,30 @@ window.addEventListener('load', () => {
       closeButton: document.getElementById('contact-modal-close'),
       modal: document.getElementById('contact-modal'),
     },
-    'service-modal-adhd-treatment': {
-      openButton: document.querySelectorAll(
-        '#service-modal-open-adhd-treatment'
-      ),
-      closeButton: document.getElementById(
-        'service-modal-close-adhd-treatment'
-      ),
-      modal: document.getElementById('service-modal-adhd-treatment'),
+    'service-modal-assessment': {
+      openButton: document.querySelectorAll('#service-modal-open-assessment'),
+      closeButton: document.getElementById('service-modal-close-assessment'),
+      modal: document.getElementById('service-modal-assessment'),
     },
-    'service-modal-adhd-assessments': {
-      openButton: document.querySelectorAll(
-        '#service-modal-open-adhd-assessments'
-      ),
-      closeButton: document.getElementById(
-        'service-modal-close-adhd-assessments'
-      ),
-      modal: document.getElementById('service-modal-adhd-assessments'),
+    'service-modal-psychotherapy': {
+      openButton: document.querySelectorAll('#service-modal-open-psychotherapy'),
+      closeButton: document.getElementById('service-modal-close-psychotherapy'),
+      modal: document.getElementById('service-modal-psychotherapy'),
+    },
+    'service-modal-neurofeedback': {
+      openButton: document.querySelectorAll('#service-modal-open-neurofeedback'),
+      closeButton: document.getElementById('service-modal-close-neurofeedback'),
+      modal: document.getElementById('service-modal-neurofeedback'),
+    },
+    'service-modal-parent-training': {
+      openButton: document.querySelectorAll('#service-modal-open-parent-training'),
+      closeButton: document.getElementById('service-modal-close-parent-training'),
+      modal: document.getElementById('service-modal-parent-training'),
+    },
+    'service-modal-medication': {
+      openButton: document.querySelectorAll('#service-modal-open-medication'),
+      closeButton: document.getElementById('service-modal-close-medication'),
+      modal: document.getElementById('service-modal-medication'),
     }
   };
 

@@ -48,6 +48,10 @@
   <!-- Splide.js Library -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <!-- AOS (Animate On Scroll) Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
@@ -69,12 +73,16 @@
               <div>Services</div>
             </div>
             <nav class="wbs-dropdown-list w-dropdown-list">
-              <a id="service-modal-open-adhd-treatment" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Treatment Sessions</a>
-              <a id="service-modal-open-adhd-assessments" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">ADHD Assessments</a>
+              <a id="service-modal-open-assessment" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Thorough Formal Assessment</a>
+              <a id="service-modal-open-psychotherapy" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Psychotherapy</a>
+              <a id="service-modal-open-neurofeedback" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Neurofeedback Training</a>
+              <a id="service-modal-open-parent-training" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Parent Training</a>
+              <a id="service-modal-open-medication" style="cursor: pointer" class="wbs-dropdown-link w-dropdown-link">Medication Management</a>
             </nav>
           </div>
           <a href="#section-meet-specialists" class="wbs-nav-link-dark w-nav-link">Our Specialists</a>
           <a href="#section-how-it-works" class="wbs-nav-link-dark w-nav-link">How It Works</a>
+          <a href="#section-faq" class="wbs-nav-link-dark w-nav-link">FAQ</a>
           <div class="book-an-appointment-mobile">
             <a id="contact-modal-open" href="#" class="wbs-button-primary-1 w-button">❤️ Get a Free Consultation</a>
           </div>
@@ -117,7 +125,7 @@
               <div class="wbs-container">
                 <div class="wbs-feature-component">
                   <div class="wbs-feature-4 wbs-features-hero">
-                    <div id="w-node-aedf0165-9836-40c1-8509-edd3cc1da639-f2ae1fda" class="wbs-feature-4-item"><img src="images/adhd-2.webp" loading="lazy" alt="" class="wbs-feature-icon">
+                    <div id="service-modal-open-assessment" data-w-id="aedf0165-9836-40c1-8509-edd3cc1da639" style="cursor: pointer" class="wbs-feature-4-item"><img src="images/services/service-assessment.webp" loading="lazy" alt="ADHD Assessment" class="wbs-feature-icon">
                       <div class="wbs-feature-left-info">
                         <div class="wbs-feature-text">
                           <h1 class="wbs-feature-title"><strong class="bold-text-2">ADHD Assessments & Treatment</strong></h1>
@@ -130,7 +138,7 @@
                 </div>
                 <div class="wbs-feature-component">
                   <div class="wbs-feature-4 wbs-features-hero">
-                    <div id="w-node-_1c6ca2e7-26ef-113d-5e38-e0d9ce71eae5-f2ae1fda" class="wbs-feature-4-item"><img src="images/family-gathering.webp" loading="lazy" alt="" class="wbs-feature-icon">
+                    <div id="service-modal-open-parent-training" data-w-id="1c6ca2e7-26ef-113d-5e38-e0d9ce71eae5" style="cursor: pointer" class="wbs-feature-4-item"><img src="images/services/service-parent-training.webp" loading="lazy" alt="Parent Training" class="wbs-feature-icon">
                       <div class="wbs-feature-left-info">
                         <div class="wbs-feature-text">
                           <h1 class="wbs-feature-title"><strong>Family Support</strong></h1>
@@ -143,11 +151,24 @@
                 </div>
                 <div class="wbs-feature-component">
                   <div class="wbs-feature-4 wbs-features-hero">
-                    <div id="w-node-_22c47120-0af1-42d5-ba80-7702e1af981a-f2ae1fda" class="wbs-feature-4-item"><img src="images/leaf.webp" loading="lazy" alt="" class="wbs-feature-icon">
+                    <div id="service-modal-open-medication" data-w-id="22c47120-0af1-42d5-ba80-7702e1af981a" style="cursor: pointer" class="wbs-feature-4-item"><img src="images/services/service-meds.webp" loading="lazy" alt="Medication Prescription" class="wbs-feature-icon">
                       <div class="wbs-feature-left-info">
                         <div class="wbs-feature-text">
-                          <h1 class="wbs-feature-title">Medication Guidance</h1>
+                          <h1 class="wbs-feature-title">Medication Prescription</h1>
                           <p>We can help determine if medication is right for your child and recommend the best options if needed.</p>
+                        </div>
+                        <div class="wbs-feature-arrow"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wbs-feature-component">
+                  <div class="wbs-feature-4 wbs-features-hero">
+                    <div id="service-modal-open-psychotherapy" data-w-id="22c47120-0af1-42d5-ba80-7702e1af981b" style="cursor: pointer" class="wbs-feature-4-item"><img src="images/services/service-psychotherapy.webp" loading="lazy" alt="ADHD Therapy" class="wbs-feature-icon">
+                      <div class="wbs-feature-left-info">
+                        <div class="wbs-feature-text">
+                          <h1 class="wbs-feature-title"><strong>ADHD Therapy Services</strong></h1>
+                          <p>Specialized therapy including CBT, play therapy, and parent coaching to help your child thrive at home and school.</p>
                         </div>
                         <div class="wbs-feature-arrow"></div>
                       </div>
@@ -158,7 +179,7 @@
             </div>
           </div>
           <div id="contact-form-hero" data-w-id="2df654c2-d02f-3dfb-3659-3bec6dec4b15" style="opacity:0" class="wbs-hero-4-image-wrap w-node-e1f6ae20-8021-92a8-e287-343b3d881626-4a04ebe3">
-            <!-- <div class="wbs-hero-subscribe w-form">
+            <div class="wbs-hero-subscribe w-form">
               <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
                 <input type="hidden" name="form-name" value="contact">
                 <p style="display:none;">
@@ -177,7 +198,7 @@
               <div class="wbs-error-message w-form-fail">
                 <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment">book an appointment directly here</button>.</div>
               </div>
-            </div> -->
+            </div>
             <div data-w-id="7009da1f-769c-390f-1f99-3356fbd4691c" style="opacity:0" class="wbs-display-image-container"><img src="images/6796aec0af888815f2ae1ffb_file-p-500.webp" loading="lazy" alt="" class="wbs-step-4-image"></div>
           </div>
         </div>
@@ -207,9 +228,9 @@
       <div class="wbs-feature-component">
         <div class="wbs-feature-split-2">
           <div id="w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807b3-f2ae1fda">
-            <div data-w-id="72307a76-7ec2-08ec-cdd0-ae4abce807b4" style="opacity:0" class="wbs-feature-title-wrap">
-              <h2 class="wbs-heading-h4 center">ADHD Services</h2>
-              <p class="specialists-subtitle center">Professional ADHD assessments and therapy to help your child thrive at home and school.</p>
+            <div class="wbs-feature-title-wrap">
+              <h2 class="wbs-heading-h4 center">ADHD Treatment Services</h2>
+              <p class="specialists-subtitle center">A complete suite of services to help children, teens, and adults thrive academically, socially, and emotionally.</p>
             </div>
             <div class="wbs-spacing-50"></div>
             
@@ -220,50 +241,127 @@
 
             <div class="wbs-spacing-60"></div>
             <div id="w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807ba-f2ae1fda" class="wbs-feature-split-right">
-              <div id="service-modal-open-adhd-treatment" data-w-id="72307a76-7ec2-08ec-cdd0-ae4abce807bb" style="opacity:0; cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807bb-f2ae1fda">
-                <div class="wbs-feature-icon-simple"><img src="images/family-gathering_1.webp" loading="lazy" alt="happy family" class="wbs-feature-icon-services"></div>
+
+              <!-- Service 1: Thorough Formal Assessment -->
+              <div id="service-modal-open-assessment" style="cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807bb-f2ae1fda" data-aos="fade-left">
+                <div class="wbs-feature-icon-simple"><img src="images/services/service-assessment.webp" loading="lazy" alt="ADHD Assessment" class="wbs-feature-icon-services"></div>
                 <div class="wbs-spacing-30"></div>
-                <h3 class="wbs-feature-title color-secondary"><strong>Treatment Sessions</strong></h3>
-                <p>Therapy for children, teens, and families to help manage ADHD at home and school. We offer behaviour therapy, CBT, and parent coaching to support attention, emotions, and social skills.<br></p>
+                <h3 class="wbs-feature-title color-secondary"><strong>Thorough Formal Assessment</strong></h3>
+                <p>A detailed, evidence-based evaluation to understand your child's focus, attention, behavior patterns, and emotional wellbeing. You'll receive a personalized treatment plan tailored to your child's unique needs and goals.</p>
                 <div class="wbs-pricing-3-list">
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Personalized ADHD treatment</div>
+                    <div>Comprehensive 2-3 week assessment process</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Help with improving focus and attention</div>
+                    <div>Detailed reports for schools and doctors</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Parent coaching for ADHD</div>
+                    <div>Personalized treatment recommendations</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Online &amp; in-person therapy available</div>
+                    <div>Affordable, high-quality assessment</div>
                   </div>
                 </div>
                 <div class="wbs-spacing-30"></div>
-                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-adhd-treatment">Learn More</a>
+                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-assessment">Learn More</a>
               </div>
-              <div id="service-modal-open-adhd-assessments" data-w-id="72307a76-7ec2-08ec-cdd0-ae4abce807c2" style="opacity:0; cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807c2-f2ae1fda">
-                <div class="wbs-feature-icon-simple"><img src="images/adhd-2.webp" loading="lazy" alt="" class="wbs-feature-icon-services"></div>
+
+              <!-- Service 2: Psychotherapy -->
+              <div id="service-modal-open-psychotherapy" style="cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807c2-f2ae1fda" data-aos="fade-right">
+                <div class="wbs-feature-icon-simple"><img src="images/services/service-psychotherapy.webp" loading="lazy" alt="Therapy Session" class="wbs-feature-icon-services"></div>
                 <div class="wbs-spacing-30"></div>
-                <h3 class="wbs-feature-title"><strong class="color-secondary">ADHD Assessments</strong></h3>
-                <p>Comprehensive evaluations to help identify ADHD symptoms and create a clear path forward. Our team uses clinical interviews, questionnaires, and evidence-based tools to provide accurate diagnoses and personalized recommendations.</p>
+                <h3 class="wbs-feature-title color-secondary"><strong>Psychotherapy (ADHD-Specialized Therapy)</strong></h3>
+                <p>Evidence-based therapy to help improve emotional regulation, impulse control, social skills, and executive functioning. We use CBT, play therapy, art therapy, and other proven approaches.</p>
                 <div class="wbs-pricing-3-list">
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Thorough ADHD diagnostic evaluations</div>
+                    <div>Cognitive Behavioral Therapy (CBT)</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Clear, detailed reports for schools, doctors, or personal planning</div>
+                    <div>Play therapy and art therapy options</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Support for next steps — therapy, accommodations, and resources</div>
+                    <div>Strength-based and solution-focused approaches</div>
                   </div>
                   <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
-                    <div>Online &amp; in-person assessments available</div>
+                    <div>Online &amp; in-person sessions available</div>
                   </div>
                 </div>
                 <div class="wbs-spacing-30"></div>
-                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-adhd-assessments">Learn More</a>
+                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-psychotherapy">Learn More</a>
               </div>
+
+              <!-- Service 3: Neurofeedback Training -->
+              <div id="service-modal-open-neurofeedback" style="cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807c3-f2ae1fda" data-aos="fade-left">
+                <div class="wbs-feature-icon-simple"><img src="images/services/service-neurofeedback.webp" loading="lazy" alt="Neurofeedback" class="wbs-feature-icon-services"></div>
+                <div class="wbs-spacing-30"></div>
+                <h3 class="wbs-feature-title color-secondary"><strong>Neurofeedback Training</strong></h3>
+                <p>A non-invasive and drug-free brain-based method that creates a detailed map of your child's brain activity to improve self-regulation and cognitive performance. A great complement or alternative to medication.</p>
+                <div class="wbs-pricing-3-list">
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Better attention and focus</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Improved emotional control</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Reduced impulsivity</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Non-invasive, drug-free approach</div>
+                  </div>
+                </div>
+                <div class="wbs-spacing-30"></div>
+                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-neurofeedback">Learn More</a>
+              </div>
+
+              <!-- Service 4: Parent Training -->
+              <div id="service-modal-open-parent-training" style="cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807c4-f2ae1fda" data-aos="fade-right">
+                <div class="wbs-feature-icon-simple"><img src="images/services/service-parent-training.webp" loading="lazy" alt="Parent Training" class="wbs-feature-icon-services"></div>
+                <div class="wbs-spacing-30"></div>
+                <h3 class="wbs-feature-title color-secondary"><strong>Parent Training for ADHD</strong></h3>
+                <p>Empowering parents is one of the strongest predictors of long-term success. Learn strategies to support routines, reduce conflict, and help your child thrive at home and school.</p>
+                <div class="wbs-pricing-3-list">
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Support routines and structure at home</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Improve communication with your child</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Reduce conflict and frustration</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>50-minute practical sessions</div>
+                  </div>
+                </div>
+                <div class="wbs-spacing-30"></div>
+                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-parent-training">Learn More</a>
+              </div>
+
+              <!-- Service 5: Medication Management -->
+              <div id="service-modal-open-medication" style="cursor: pointer" class="wbs-feature-5-item w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807c5-f2ae1fda" data-aos="fade-left">
+                <div class="wbs-feature-icon-simple"><img src="images/services/service-meds.webp" loading="lazy" alt="Medication Management" class="wbs-feature-icon-services"></div>
+                <div class="wbs-spacing-30"></div>
+                <h3 class="wbs-feature-title color-secondary"><strong>Medication Management</strong></h3>
+                <p>Our Nurse Practitioner provides safe, specialized medication support for your child. We take a balanced, whole-person approach to ADHD medication management.</p>
+                <div class="wbs-pricing-3-list">
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Initial evaluation and prescribing</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Regular follow-up appointments</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Monitoring effectiveness and side effects</div>
+                  </div>
+                  <div class="wbs-pricing-3-list-item"><img alt="" loading="lazy" src="images/check.webp" class="wbs-pricing-3-list-icon">
+                    <div>Adjustments as needed</div>
+                  </div>
+                </div>
+                <div class="wbs-spacing-30"></div>
+                <a href="#" class="wbs-button-primary-1 w-button" id="service-modal-open-medication">Learn More</a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -589,7 +687,7 @@
               <div class="timeline-card">
                 <h3 class="step-title">Results, Diagnosis & Support Plan</h3>
                 <p class="step-description">We meet with you to explain the results clearly and compassionately. If your child meets criteria for ADHD, we'll walk you through the diagnosis and what it means. You'll receive a written report within 1–2 weeks, including strategies to help your child at school and home.</p>
-                <p class="step-description">If needed, we'll connect you with the right next steps—whether that's therapy, parent coaching, or medication through a licensed nurse practitioner or psychiatrist. We stay involved to ensure your child gets the support they need to thrive.</p>
+                <p class="step-description">If needed, we'll connect you with the right next steps, whether that's therapy, parent coaching, or medication through a licensed nurse practitioner or psychiatrist. We stay involved to ensure your child gets the support they need to thrive.</p>
               </div>
             </div>
           </div>
@@ -608,18 +706,44 @@
       <div class="wbs-spacing-30"></div>
       <div class="wbs-according-component">
         <div class="wbs-accordion-3">
-          <div data-w-id="0ee6a4e5-402d-d21e-8288-be385f30c8f7" class="wbs-accordion-3-item">
-              <div class="wbs-accordion-3-heading">
-                <h3 class="wbs-accordion-3-title">Do you offer online therapy?</h3>
-                <div class="wbs-accordion-3-icon-wrap">
-                  <div class="wbs-accordion-3-icon-plus"></div>
-                  <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
-                </div>
-              </div>
-              <div style="height:0px" class="wbs-accordion-3-content">
-                <p class="wbs-accordion-3-description">Yes! We offer both online and in-person ADHD therapy sessions. Our virtual therapy options make it easy to access expert support from anywhere in Ontario, including Toronto, Vaughan, and Richmond Hill.</p>
+          <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">What makes you different from other ADHD clinics?</strong></h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
               </div>
             </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description">
+                <strong>1. Strong Partnerships With Schools:</strong> We collaborate directly with schools to ensure your child's academic and behavioral success. We provide academic recommendations, letters and reports for IEPs/504 Plans, ongoing communication with teachers, regular meetings with school staff, classroom strategy planning, and progress monitoring throughout the year.<br><br>
+                <strong>2. Beyond Diagnosis—Comprehensive Treatment:</strong> We don't stop at assessment. We offer the most complete range of ADHD treatment services, including therapy, coaching, cognitive training, parent support, neurofeedback, and more—so clients can improve, not just get diagnosed.<br><br>
+                <strong>3. High-Quality Assessments at a Lower Cost:</strong> We provide one of the most thorough ADHD evaluations and detailed reports available at a lower price than many other clinics. Our goal is to make quality care accessible and affordable.<br><br>
+                <strong>4. Large, Specialized Team:</strong> With more than 30 therapy rooms and over 40 licensed therapists and ADHD specialists, we offer unmatched availability, expertise, and flexibility in scheduling.<br><br>
+                <strong>5. Medication Management Services:</strong> For clients who choose medication as part of their treatment plan, our Nurse Practitioner provides medication evaluations, prescriptions, and ongoing follow-up appointments. We ensure safe, personalized, and consistent medication management.
+              </p>
+            </div>
+          </div>
+
+          <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">What is your ADHD assessment process?</strong></h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
+              </div>
+            </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description">
+                <strong>1. Parent Intake Session (Approximately 1 hour):</strong> An initial meeting to explore your child's developmental history, current challenges, and strengths. This helps guide the assessment plan.<br><br>
+                <strong>2. Standardized Questionnaires (Completed over several days):</strong> Parents, teachers, and (depending on age) the child complete questionnaires about attention, impulsivity, and behaviour at home and school. This offers a well-rounded understanding of your child's needs.<br><br>
+                <strong>3. In-Person Testing (Approximately 3 hours):</strong> Your child completes interactive tasks with a psychologist and psychometrist to assess attention, working memory, and executive functioning. These sessions identify cognitive patterns related to focus and self-regulation.<br><br>
+                <strong>4. Feedback Session (About 1 hour total):</strong> A follow-up meeting to review results, discuss findings, and plan next steps. When appropriate, a shorter, age-appropriate feedback session may be held with your child.<br><br>
+                <strong>5. Final Report (Delivered within 1–2 weeks):</strong> A comprehensive written report summarizing results, diagnostic impressions, and practical recommendations to support your child at home, school, and in daily life.
+              </p>
+            </div>
+          </div>
+
           <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
             <div class="wbs-accordion-3-heading">
               <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">Do you offer in-person therapy?</strong></h3>
@@ -634,16 +758,43 @@
           </div>
           <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
             <div class="wbs-accordion-3-heading">
-              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">How much does a therapy session cost?</strong></h3>
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">How much do your services cost?</strong></h3>
               <div class="wbs-accordion-3-icon-wrap">
                 <div class="wbs-accordion-3-icon-plus"></div>
                 <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
               </div>
             </div>
             <div style="height:0px" class="wbs-accordion-3-content">
-              <p class="wbs-accordion-3-description">Each ADHD therapy session costs $108. We strive to make expert ADHD treatment affordable and accessible.<br></p>
+              <p class="wbs-accordion-3-description"><strong>Regular Therapy Sessions:</strong> $108-$120 per session<br>This includes CBT, Play Therapy, Art Therapy, Parent Training, and other therapeutic approaches.<br><br><strong>Thorough Formal ADHD Assessment:</strong> $1,500<br>This includes a comprehensive 2-3 week evaluation process with parent intake, questionnaires, in-person testing, feedback session, and a detailed written report.<br><br>Unlike other clinics that rush through evaluations claiming fast, rapid results, we take the time to thoroughly understand your child's unique needs. Our comprehensive approach ensures accurate diagnosis and personalized treatment plans that lead to real, lasting progress.<br><br>We strive to make expert ADHD treatment affordable and accessible.</p>
             </div>
           </div>
+
+          <div data-w-id="0ee6a4e5-402d-d21e-8288-be385f30c8f7" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title">Do you offer online therapy?</h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
+              </div>
+            </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description">Yes! We offer both online and in-person ADHD therapy sessions. Our virtual therapy options make it easy to access expert support from anywhere in Ontario, including Toronto, Vaughan, and Richmond Hill.</p>
+            </div>
+          </div>
+
+          <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">Do you offer in-person therapy?</strong></h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
+              </div>
+            </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description">We do! We are located at <a href="https://maps.app.goo.gl/Fsas49A2LmSb3cBx8" target="_blank">9040 Leslie St Unit 7, Richmond Hill, ON L4B 3M4</a>. We also offer virtual sessions from the comfort of your home.</p>
+            </div>
+          </div>
+
           <div data-w-id="0ee6a4e5-402d-d21e-8288-be385f30c90e" class="wbs-accordion-3-item">
             <div class="wbs-accordion-3-heading">
               <h3 class="wbs-accordion-3-title">Do you provide treatment for adults as well?</h3>
@@ -762,6 +913,7 @@
           <a href="#section-our-services" class="wbs-footer-link">ADHD Services</a>
           <a href="#section-meet-specialists" class="wbs-footer-link">Our Specialists</a>
           <a href="#section-how-it-works" class="wbs-footer-link">How It Works</a>
+          <a href="#section-faq" class="wbs-footer-link">FAQ</a>
         </div>
         <div class="wbs-hero-client-grid logo-grid">
           <a href="https://www.psychologytoday.com/ca/therapists/roots-and-tales-clinic-richmond-hill-on/1278486" class="w-inline-block"><img sizes="(max-width: 1600px) 100vw, 1600px" srcset="images/pt-p-500.webp 500w, images/pt-p-800.webp 800w, images/pt-p-1080.webp 1080w, images/pt.webp 1600w" alt="" src="images/pt.webp" loading="lazy" class="wbs-client-logo"></a>
@@ -773,113 +925,48 @@
     </div>
   </div>
 
-  <div id="service-modal-adhd-treatment" class="modal-overlay hidden">
+  <!-- Modal 1: Thorough Formal Assessment -->
+  <div id="service-modal-assessment" class="modal-overlay hidden">
     <div class="modal-wrapper">
       <div class="close-button-wrapper">
-        <button class="wbs-button-primary-1" id="service-modal-close-adhd-treatment">CLOSE</button>
+        <button class="wbs-button-primary-1" id="service-modal-close-assessment">CLOSE</button>
       </div>
       <div class="modal-content">
         <div class="wbs-spacing-30"></div>
         <div class="wbs-feature-icon-simple">
-          <img src="images/family-gathering_1.webp" loading="lazy" alt="happy family" class="wbs-feature-icon-service">
+          <img src="images/services/service-assessment.webp" loading="lazy" alt="ADHD Assessment" class="wbs-feature-icon-service">
         </div>
-        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">ADHD Treatment Sessions</h4>
-  
-        <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">Why would my child need ADHD Treatment?</h6>
-        <p>
-          If ADHD symptoms like trouble focusing, impulsivity, or emotional outbursts are affecting your child's success at home or school, targeted therapy can make a real difference. Our sessions help kids build focus, manage emotions, and develop daily skills. We also coach parents, giving you simple tools to support your child at home and create calmer routines.
-        </p>
-  
-        <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">5 Ways ADHD Treatment Can Help</h6>
-        <ul>
-          <li><strong>Build Focus and Attention:</strong> Practical strategies to help kids stay on task at school and at home.</li>
-          <li><strong>Manage Emotions:</strong> Tools for coping with frustration, impulsivity, and overwhelm.</li>
-          <li><strong>Strengthen Social Skills:</strong> Support for making friends, handling peer challenges, and building confidence.</li>
-          <li><strong>Improve Organization and Routines:</strong> Skills for completing homework, staying organized, and following daily routines.</li>
-          <li><strong>Create a Calmer Home Life:</strong> Parent coaching to help manage behaviors and strengthen family communication.</li>
-        </ul>
-  
-        <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">How does ADHD Treatment work?</h6>
-        <p>
-          We use evidence-based approaches like CBT and behavior therapy, always tailored to your child's needs. Sessions are practical, interactive, and focused on building skills that last beyond therapy. Our goal is to help your child thrive at school, at home, and in their relationships. We offer both in-person and online options to fit your family's needs.
-        </p>
-  
-        <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">Let's Help Your Child get the Tools They Need to Succeed</h6>
-  
-        <div class="wbs-hero-subscribe w-form">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-            <input type="hidden" name="form-name" value="contact">
-            <p style="display:none;">
-              <label>Don't fill this out if you're human: <input name="bot-field"></label>
-            </p>
-            <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email" placeholder="Your Email (Required)" type="email" id="email-treatment" required>
-            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name-treatment" required>
-            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone-treatment" required>
-            <textarea placeholder="Your Message" maxlength="5000" id="message-treatment" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
-            <input type="submit" data-wait="Please wait..." class="wbs-button-primary-2 wbs-form-button w-button" value="❤️ Get a Free Consultation ❤️">
-          </form>
-          <div class="wbs-spacing-30"></div>
-          <div class="wbs-success-message w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="wbs-error-message w-form-fail">
-            <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-treatment">book an appointment directly here</button>.</div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </div>
+        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">Thorough Formal Assessment</h4>
 
-  <div id="service-modal-adhd-assessments" class="modal-overlay hidden">
-    <div class="modal-wrapper">
-      <div class="close-button-wrapper">
-        <button class="wbs-button-primary-1" id="service-modal-close-adhd-assessments">CLOSE</button>
-      </div>
-      <div class="modal-content">
         <div class="wbs-spacing-30"></div>
-        <div class="wbs-feature-icon-simple">
-          <img src="images/adhd-2.webp" loading="lazy" alt="adhd" class="wbs-feature-icon-services">
-        </div>
-        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">ADHD Assessments</h4>
-  
-        <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">Why would my child need an ADHD Assessment?</h6>
+
+        <h6 class="wbs-feature-title color-secondary">Why Get a Thorough ADHD Assessment?</h6>
         <p>
-          If your child struggles with focus, organization, impulsivity, or emotional regulation at home or school, an ADHD assessment can help you get clear answers. Our assessments identify strengths and challenges, helping you plan the right support for success in everyday life.
+          A comprehensive ADHD assessment is the first step toward understanding what's really going on. If your child is struggling with focus, organization, impulsivity, or emotional regulation, our detailed evaluation provides clear answers and a personalized roadmap for success.
         </p>
-  
+
         <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">5 Benefits of a Professional ADHD Assessment</h6>
+
+        <h6 class="wbs-feature-title color-secondary">What's Included in the Assessment</h6>
         <ul>
-          <li><strong>Clear Answers:</strong> Evidence-based testing to understand if ADHD is affecting your child's development.</li>
-          <li><strong>Personalized Support Plan:</strong> Practical next steps for home, school, and therapy, tailored to your child's needs.</li>
-          <li><strong>School Accommodations:</strong> Detailed reports that can support IEPs, extra help, or modifications at school.</li>
-          <li><strong>Highlight Strengths:</strong> We identify not just challenges, but also your child's natural abilities.</li>
-          <li><strong>Better Family Understanding:</strong> Insights that help parents guide and support daily routines and behavior.</li>
+          <li><strong>Parent Intake Session (1 hour):</strong> We explore developmental history, current challenges, and strengths to guide the assessment.</li>
+          <li><strong>Standardized Questionnaires:</strong> Parents, teachers, and the individual complete questionnaires about attention, impulsivity, and behavior.</li>
+          <li><strong>In-Person Testing (3 hours):</strong> Interactive tasks with a psychologist to assess attention, working memory, and executive functioning.</li>
+          <li><strong>Feedback Session (1 hour):</strong> We review results, discuss findings, and plan next steps together.</li>
+          <li><strong>Comprehensive Report (1-2 weeks):</strong> A detailed written report with diagnosis, results, and practical recommendations for home and school.</li>
         </ul>
-  
+
         <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">How does an ADHD Assessment work?</h6>
+
+        <h6 class="wbs-feature-title color-secondary">High-Quality Assessment at an Affordable Price</h6>
         <p>
-          Our process includes a detailed clinical interview with parents, standardized behavior questionnaires, and structured observations of your child. We assess attention, behavior, and executive functioning across different situations to build a full picture of your child's strengths and needs. You'll receive a comprehensive report, diagnosis (if applicable), and an easy-to-follow action plan. Assessments are available in-person or online.
+          Our thorough ADHD evaluation is completed in 2-3 weeks and is one of the most affordable options for this level of detail and care. You'll receive a personalized treatment plan tailored to your child's unique needs and goals, plus reports that schools and doctors trust.
         </p>
-  
+
         <div class="wbs-spacing-30"></div>
-  
-        <h6 class="wbs-feature-title color-secondary">Take the First Step to Understanding Your Child's Needs</h6>
-  
+
+        <h6 class="wbs-feature-title color-secondary">Get Started with Your Assessment Today</h6>
+
         <div class="wbs-hero-subscribe w-form">
           <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
             <input type="hidden" name="form-name" value="contact">
@@ -900,7 +987,304 @@
             <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-assessment">book an appointment directly here</button>.</div>
           </div>
         </div>
-  
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Psychotherapy -->
+  <div id="service-modal-psychotherapy" class="modal-overlay hidden">
+    <div class="modal-wrapper">
+      <div class="close-button-wrapper">
+        <button class="wbs-button-primary-1" id="service-modal-close-psychotherapy">CLOSE</button>
+      </div>
+      <div class="modal-content">
+        <div class="wbs-spacing-30"></div>
+        <div class="wbs-feature-icon-simple">
+          <img src="images/services/service-psychotherapy.webp" loading="lazy" alt="Therapy Session" class="wbs-feature-icon-service">
+        </div>
+        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">Psychotherapy (ADHD-Specialized Therapy)</h4>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Why ADHD-Specialized Therapy?</h6>
+        <p>
+          ADHD can make daily life challenging, affecting focus, emotions, relationships, and self-confidence. Our specialized therapy helps children, teens, and adults develop practical skills to manage ADHD symptoms and thrive at home, school, and work.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">How Our Therapy Helps</h6>
+        <p>Our therapists use evidence-based methods to improve:</p>
+        <ul>
+          <li><strong>Emotional Regulation:</strong> Learn to identify and manage big feelings and reactions.</li>
+          <li><strong>Impulse Control:</strong> Develop strategies to think before acting and make better decisions.</li>
+          <li><strong>Social Skills:</strong> Build confidence in friendships and relationships.</li>
+          <li><strong>Coping Strategies:</strong> Create personalized tools for managing stress and overwhelm.</li>
+          <li><strong>Executive Functioning:</strong> Improve planning, organization, time management, and follow-through.</li>
+        </ul>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Our Evidence-Based Approaches</h6>
+        <p>We tailor our approach to your unique needs using proven therapy methods:</p>
+        <ul>
+          <li>✔ <strong>Cognitive Behavioral Therapy (CBT):</strong> Change unhelpful thought patterns and behaviors.</li>
+          <li>✔ <strong>Play Therapy:</strong> Help younger children express and process emotions through play.</li>
+          <li>✔ <strong>Art Therapy:</strong> Use creative expression to build self-awareness and coping skills.</li>
+          <li>✔ <strong>Strength-Based Therapy:</strong> Focus on natural abilities and build confidence.</li>
+          <li>✔ <strong>Solution-Focused Therapy:</strong> Set clear goals and create practical steps toward success.</li>
+        </ul>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Flexible Options to Fit Your Life</h6>
+        <p>
+          We offer both online and in-person sessions, making it easy to access expert ADHD support from anywhere in Ontario. Our therapists create a warm, supportive environment where you or your child can feel understood and empowered.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Start Building Skills That Last</h6>
+
+        <div class="wbs-hero-subscribe w-form">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email" placeholder="Your Email (Required)" type="email" id="email-psychotherapy" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name-psychotherapy" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone-psychotherapy" required>
+            <textarea placeholder="Your Message" maxlength="5000" id="message-psychotherapy" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
+            <input type="submit" data-wait="Please wait..." class="wbs-button-primary-2 wbs-form-button w-button" value="❤️ Get a Free Consultation ❤️">
+          </form>
+          <div class="wbs-spacing-30"></div>
+          <div class="wbs-success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="wbs-error-message w-form-fail">
+            <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-psychotherapy">book an appointment directly here</button>.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Neurofeedback Training -->
+  <div id="service-modal-neurofeedback" class="modal-overlay hidden">
+    <div class="modal-wrapper">
+      <div class="close-button-wrapper">
+        <button class="wbs-button-primary-1" id="service-modal-close-neurofeedback">CLOSE</button>
+      </div>
+      <div class="modal-content">
+        <div class="wbs-spacing-30"></div>
+        <div class="wbs-feature-icon-simple">
+          <img src="images/services/service-neurofeedback.webp" loading="lazy" alt="Neurofeedback" class="wbs-feature-icon-service">
+        </div>
+        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">Neurofeedback Training</h4>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">What is Neurofeedback?</h6>
+        <p>
+          Neurofeedback is a drug-free, brain-based training method that helps improve self-regulation and cognitive performance. We create a detailed map of your child's brain activity, generating a visual representation of how their brain functions. Using this real-time feedback, your child's brain learns to function more efficiently, leading to better focus, emotional control, and reduced impulsivity.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">How Neurofeedback Helps with ADHD</h6>
+        <p>Neurofeedback training can lead to improvements in:</p>
+        <ul>
+          <li><strong>Better Attention and Focus:</strong> Train your brain to stay on task longer and more effectively.</li>
+          <li><strong>Improved Emotional Control:</strong> Reduce emotional outbursts and build calmer responses to stress.</li>
+          <li><strong>Reduced Impulsivity:</strong> Strengthen self-control and think before acting.</li>
+          <li><strong>More Efficient Brain Functioning:</strong> Optimize how your brain processes information and responds to challenges.</li>
+        </ul>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">A Great Complement or Alternative to Medication</h6>
+        <p>
+          Many families choose neurofeedback as a non-invasive alternative to medication, or as a complement to existing treatment. It's safe, backed by research, and can lead to lasting improvements in attention and self-regulation.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Is Neurofeedback Right for Your Child?</h6>
+        <p>
+          Neurofeedback is suitable for children, teens, and adults with ADHD. Our team will assess whether it's a good fit for your child during your initial consultation and create a personalized training plan if appropriate.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Learn More About Neurofeedback</h6>
+
+        <div class="wbs-hero-subscribe w-form">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email" placeholder="Your Email (Required)" type="email" id="email-neurofeedback" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name-neurofeedback" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone-neurofeedback" required>
+            <textarea placeholder="Your Message" maxlength="5000" id="message-neurofeedback" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
+            <input type="submit" data-wait="Please wait..." class="wbs-button-primary-2 wbs-form-button w-button" value="❤️ Get a Free Consultation ❤️">
+          </form>
+          <div class="wbs-spacing-30"></div>
+          <div class="wbs-success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="wbs-error-message w-form-fail">
+            <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-neurofeedback">book an appointment directly here</button>.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Parent Training -->
+  <div id="service-modal-parent-training" class="modal-overlay hidden">
+    <div class="modal-wrapper">
+      <div class="close-button-wrapper">
+        <button class="wbs-button-primary-1" id="service-modal-close-parent-training">CLOSE</button>
+      </div>
+      <div class="modal-content">
+        <div class="wbs-spacing-30"></div>
+        <div class="wbs-feature-icon-simple">
+          <img src="images/services/service-parent-training.webp" loading="lazy" alt="Parent Training" class="wbs-feature-icon-service">
+        </div>
+        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">Parent Training for ADHD</h4>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Why Parent Training Matters</h6>
+        <p>
+          Empowering parents is one of the strongest predictors of long-term success for children with ADHD. When parents understand ADHD and learn effective strategies, the entire family benefits by creating a calmer, more supportive home environment.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">What You'll Learn</h6>
+        <p>Our 50-minute parent training sessions help you develop practical skills to:</p>
+        <ul>
+          <li><strong>Support Routines and Structure at Home:</strong> Build consistent, predictable daily schedules that reduce stress.</li>
+          <li><strong>Improve Communication with Your Child:</strong> Learn how to connect, listen, and respond in ways that build trust and cooperation.</li>
+          <li><strong>Reduce Conflict and Frustration:</strong> De-escalate challenging moments and prevent power struggles before they start.</li>
+          <li><strong>Reinforce Positive Behaviors:</strong> Use positive reinforcement and encouragement to shape better habits.</li>
+          <li><strong>Help with Homework and Organization:</strong> Strategies to make schoolwork less overwhelming for both you and your child.</li>
+          <li><strong>Understand How ADHD Affects Emotions and Daily Life:</strong> Gain insight into your child's brain and behavior, so you can respond with empathy and confidence.</li>
+        </ul>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Parents Gain Confidence, Kids Feel Supported</h6>
+        <p>
+          When you feel equipped and confident, your child feels more understood and supported. Our parent training sessions give you the tools to create lasting positive change at home, reducing stress and strengthening your relationship with your child.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Start Your Parent Training Journey</h6>
+
+        <div class="wbs-hero-subscribe w-form">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email" placeholder="Your Email (Required)" type="email" id="email-parent-training" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name-parent-training" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone-parent-training" required>
+            <textarea placeholder="Your Message" maxlength="5000" id="message-parent-training" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
+            <input type="submit" data-wait="Please wait..." class="wbs-button-primary-2 wbs-form-button w-button" value="❤️ Get a Free Consultation ❤️">
+          </form>
+          <div class="wbs-spacing-30"></div>
+          <div class="wbs-success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="wbs-error-message w-form-fail">
+            <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-parent-training">book an appointment directly here</button>.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Medication Management -->
+  <div id="service-modal-medication" class="modal-overlay hidden">
+    <div class="modal-wrapper">
+      <div class="close-button-wrapper">
+        <button class="wbs-button-primary-1" id="service-modal-close-medication">CLOSE</button>
+      </div>
+      <div class="modal-content">
+        <div class="wbs-spacing-30"></div>
+        <div class="wbs-feature-icon-simple">
+          <img src="images/services/service-meds.webp" loading="lazy" alt="Medication Management" class="wbs-feature-icon-service">
+        </div>
+        <h4 class="wbs-heading-h4-2 section-title color-primary-darker">Medication Management</h4>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Safe, Specialized ADHD Medication Support</h6>
+        <p>
+          For some children, medication can be an important part of managing ADHD symptoms. Our experienced Nurse Practitioner provides safe, personalized medication management to help your child find the right balance and achieve better focus, emotional control, and daily functioning.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Our Medication Management Services Include</h6>
+        <ul>
+          <li><strong>Initial Evaluation:</strong> A thorough assessment to determine if medication is right for your child.</li>
+          <li><strong>Prescribing ADHD Medications:</strong> Expert guidance on the best medication options based on your child's unique needs.</li>
+          <li><strong>Follow-Up Appointments:</strong> Regular check-ins to monitor progress and make adjustments as needed.</li>
+          <li><strong>Monitoring Effectiveness and Side Effects:</strong> Careful attention to how medication is working and any side effects.</li>
+          <li><strong>Adjustments as Needed:</strong> Fine-tuning dosages and medication types to optimize results.</li>
+        </ul>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">A Balanced, Whole-Person Approach</h6>
+        <p>
+          We don't just prescribe medication. We take a comprehensive approach. Our team considers therapy, lifestyle factors, and family support alongside medication to ensure you're getting the most effective, well-rounded care possible.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Is Medication Right for Your Child?</h6>
+        <p>
+          Many children with ADHD benefit from medication, while others do well with therapy and lifestyle strategies alone. During your consultation, we'll help you explore all options and make an informed decision that's right for your family.
+        </p>
+
+        <div class="wbs-spacing-30"></div>
+
+        <h6 class="wbs-feature-title color-secondary">Schedule Your Medication Consultation</h6>
+
+        <div class="wbs-hero-subscribe w-form">
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <input class="wbs-form-subscribe-input w-input" autofocus="true" maxlength="256" name="email" data-name="Email" placeholder="Your Email (Required)" type="email" id="email-medication" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="name" data-name="name" placeholder="Your Name (Required)" type="text" id="name-medication" required>
+            <input class="wbs-form-subscribe-input w-input" maxlength="256" name="phone" data-name="phone" placeholder="Your Phone Number (Required)" type="tel" id="phone-medication" required>
+            <textarea placeholder="Your Message" maxlength="5000" id="message-medication" name="message" data-name="message" class="wbs-form-subscribe-input text-area w-input"></textarea>
+            <input type="submit" data-wait="Please wait..." class="wbs-button-primary-2 wbs-form-button w-button" value="❤️ Get a Free Consultation ❤️">
+          </form>
+          <div class="wbs-spacing-30"></div>
+          <div class="wbs-success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="wbs-error-message w-form-fail">
+            <div>Something went wrong while submitting the form. You can <button id="cta-book-an-appointment-medication">book an appointment directly here</button>.</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -948,6 +1332,15 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/modal.js" type="text/javascript"></script>
   <script src="js/conversions.js" type="text/javascript"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 
 </body>
 </html>
