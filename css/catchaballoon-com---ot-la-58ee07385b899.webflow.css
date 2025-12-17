@@ -2202,3 +2202,74 @@ strong {
     align-self: flex-start;
   }
 }
+
+/* Sticky Top Bar */
+.sticky-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: var(--flowstica-webflow-library--color-secondary-lighter, #d7d7eb);
+  padding: 10px 20px;
+  font-family: Inter, sans-serif;
+}
+
+.sticky-top-bar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.sticky-top-bar .cta-phone,
+.sticky-top-bar .cta-book {
+  background-color: var(--flowstica-webflow-library--color-secondary, #5f4bb6);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sticky-top-bar .cta-phone:hover,
+.sticky-top-bar .cta-book:hover {
+  background-color: var(--flowstica-webflow-library--black-light, #345677);
+}
+
+.sticky-top-bar .cta-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Offset the page content for the sticky bar */
+body {
+  padding-top: 52px;
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-top-bar {
+    padding: 8px 12px;
+  }
+
+  .sticky-top-bar-container {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .sticky-top-bar .cta-phone,
+  .sticky-top-bar .cta-book {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
