@@ -2209,10 +2209,16 @@ strong {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   z-index: 9999;
   background-color: var(--flowstica-webflow-library--color-secondary-lighter, #d7d7eb);
   padding: 10px 20px;
   font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .sticky-top-bar-container {
