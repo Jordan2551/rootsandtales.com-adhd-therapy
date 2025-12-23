@@ -62,6 +62,22 @@
   
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+
+  <!-- Mobile Hero Title Resize -->
+  <style>
+    @media (max-width: 767px) {
+      .wbs-hero-3-title {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+      }
+    }
+    @media (max-width: 479px) {
+      .wbs-hero-3-title {
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -123,19 +139,21 @@
               <!-- Trust Signals -->
               <div class="trust-signals-container">
                 <div class="trust-signal-item">
-                  <span class="canadian-flag">🇨🇦</span>
-                  <span class="trust-text">Trusted by 1,000+ Canadian Families</span>
+                  <span class="canadian-flag">🇨🇦⭐</span>
+                  <span class="trust-text">The highest rated child ADHD clinic. Trusted by 1,000+ Canadian families</span>
                 </div>
               </div>
 
-                     
-              <!-- CTA Button for ADHD Screening -->
-              <div class="wbs-spacing-20"></div>
-              <div class="hero-cta-container">
-                <a href="https://form.typeform.com/to/DSEnFMKZ" target="_blank" class="wbs-button-primary-1 hero-screening-cta w-button">
-                   Take Our 3-Minute ADHD Screening
-                </a>
+              <div class="wbs-spacing-30"></div>
+
+              <!-- Free Consultation Offer -->
+              <div class="free-consultation-callout" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0ea5e9; padding: 24px 28px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #0c4a6e; font-size: 1.25rem; font-weight: 700; margin: 0 0 10px 0; line-height: 1.3;">Free 60 Minute Consultation</h3>
+                <p style="color: #334155; font-size: 1rem; margin: 0 0 16px 0; line-height: 1.6;">Meet with an ADHD specialist to determine if your child needs a formal assessment. If not needed, you pay nothing — guaranteed.</p>
+                <a id="contact-modal-open" href="#" class="wbs-button-primary-1 w-button" style="margin-top: 4px; display: inline-block;">Book Your Free Consultation →</a>
               </div>
+
+              <!-- CTA Button for ADHD Screening -->
               <div class="wbs-spacing-30"></div>
               <div class="wbs-container">
                 <div class="wbs-feature-component">
@@ -193,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div id="contact-form-hero" data-w-id="2df654c2-d02f-3dfb-3659-3bec6dec4b15" style="opacity:0" class="wbs-hero-4-image-wrap w-node-e1f6ae20-8021-92a8-e287-343b3d881626-4a04ebe3">
+          <!-- <div id="contact-form-hero" data-w-id="2df654c2-d02f-3dfb-3659-3bec6dec4b15" style="opacity:0" class="wbs-hero-4-image-wrap w-node-e1f6ae20-8021-92a8-e287-343b3d881626-4a04ebe3">
             <div class="wbs-hero-subscribe w-form">
               <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
                 <input type="hidden" name="form-name" value="contact">
@@ -215,7 +233,7 @@
               </div>
             </div>
             <div data-w-id="7009da1f-769c-390f-1f99-3356fbd4691c" style="opacity:0" class="wbs-display-image-container"><img src="images/6796aec0af888815f2ae1ffb_file-p-500.webp" loading="lazy" alt="" class="wbs-step-4-image"></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -390,7 +408,7 @@
       <div data-w-id="68da3306-1f55-17f8-9e0f-0f15021c3748" style="opacity:0" class="wbs-cta-5">
         <div class="wbs-cta-5-content">
           <h2 class="wbs-heading-h5">Start Taking Control of Your Child's ADHD</h2>
-          <p class="wbs-lead-text">Not sure where to start? Take our 3-minute screening first, or book directly with our team.</p>
+          <p class="wbs-lead-text">Begin with a <strong>free 60-minute in-person session</strong> — zero risk, zero cost if an assessment isn't needed.</p>
           <div class="wbs-cta-5-button">
             <a href="https://form.typeform.com/to/DSEnFMKZ" target="_blank" class="wbs-button-primary-1 w-button">🧠 Take 3-Minute ADHD Screening</a>
             <a id="contact-modal-open" href="#" class="wbs-button-primary-2 w-button">❤️ Get a Free Consultation</a>
@@ -666,8 +684,16 @@
     <div class="wbs-container">
       <div class="how-it-works-component">
         <h2 class="wbs-heading-h4 center">How <span class="text-span-6">ADHD Diagnosis</span> Works</h2>
-        <div class="wbs-spacing-50"></div>
-        
+        <div class="wbs-spacing-30"></div>
+
+        <!-- Free Consultation Callout -->
+        <div style="max-width: 700px; margin: 0 auto 40px; background: rgba(255, 255, 255, 0.95); border-radius: 12px; padding: 24px 28px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <h3 style="color: #1e293b; font-size: 1.3rem; font-weight: 700; margin: 0 0 12px 0; text-align: center;">Not Sure If Your Child Needs a Full Assessment?</h3>
+          <p style="color: #475569; font-size: 1.05rem; margin: 0; text-align: center; line-height: 1.6;">Start with a <strong>free 60-minute in-person consultation</strong>. We will tell you if an assessment is truly needed.</p>
+        </div>
+
+        <div class="wbs-spacing-30"></div>
+
         <div class="timeline-container">
           <!-- Step 1 -->
           <div class="timeline-item">
@@ -678,6 +704,7 @@
               <div class="timeline-card">
                 <h3 class="step-title">Intake & History Review</h3>
                 <p class="step-description">We meet with you to understand your child's development, current challenges, and strengths. This first step helps us tailor the assessment to your child's unique needs.</p>
+                <p class="step-description" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.2);"><strong>💡 Not sure if you need a full assessment?</strong> Your first 60-minute session is completely free. If we determine an assessment isn't needed, you pay nothing.</p>
               </div>
             </div>
           </div>
@@ -723,6 +750,28 @@
       <div class="wbs-spacing-30"></div>
       <div class="wbs-according-component">
         <div class="wbs-accordion-3">
+          <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">How does your free first session work?</strong></h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
+              </div>
+            </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description">
+                <strong>It's simple and completely risk-free.</strong><br><br>
+                You'll meet with one of our experienced ADHD therapists for a full 60-minute in-person consultation. During this session, we'll:<br><br>
+                • Discuss your child's current challenges, behaviors, and concerns<br>
+                • Review developmental history and what's happening at home and school<br>
+                • Help you understand whether a formal ADHD assessment is necessary<br>
+                • Answer all your questions and provide expert guidance<br><br>
+                <strong>Here's the best part:</strong> If we determine together that your child doesn't need a full ADHD assessment, you pay absolutely nothing. The session is completely free — no hidden fees, no pressure, no strings attached.<br><br>
+                You only pay if you decide to move forward with a comprehensive assessment or other services. It's our way of making sure you get the clarity and support you need before making any commitment.
+              </p>
+            </div>
+          </div>
+
           <div data-w-id="b5fc0fc6-dae7-847f-003e-fff48261c05e" class="wbs-accordion-3-item">
             <div class="wbs-accordion-3-heading">
               <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">What makes you different from other ADHD clinics?</strong></h3>
@@ -782,7 +831,7 @@
               </div>
             </div>
             <div style="height:0px" class="wbs-accordion-3-content">
-              <p class="wbs-accordion-3-description"><strong>Regular Therapy Sessions:</strong> $108-$120 per session<br>This includes CBT, Play Therapy, Art Therapy, Parent Training, and other therapeutic approaches.<br><br><strong>Thorough Formal ADHD Assessment:</strong> $1,500<br>This includes a comprehensive 2-3 week evaluation process with parent intake, questionnaires, in-person testing, feedback session, and a detailed written report.<br><br>Unlike other clinics that rush through evaluations claiming fast, rapid results, we take the time to thoroughly understand your child's unique needs. Our comprehensive approach ensures accurate diagnosis and personalized treatment plans that lead to real, lasting progress.<br><br>We strive to make expert ADHD treatment affordable and accessible.</p>
+              <p class="wbs-accordion-3-description"><strong style="color: #0ea5e9; font-size: 1.05rem;">Start with Zero Risk:</strong> Your first 60-minute in-person consultation is completely free. You only pay if we both agree an assessment is needed.<br><br><strong>Regular Therapy Sessions:</strong> $108-$120 per session<br>This includes CBT, Play Therapy, Art Therapy, Parent Training, and other therapeutic approaches.<br><br><strong>Thorough Formal ADHD Assessment:</strong> $1,500<br>This includes a comprehensive 2-3 week evaluation process with parent intake, questionnaires, in-person testing, feedback session, and a detailed written report.<br><br>Unlike other clinics that rush through evaluations claiming fast, rapid results, we take the time to thoroughly understand your child's unique needs. Our comprehensive approach ensures accurate diagnosis and personalized treatment plans that lead to real, lasting progress.<br><br>We strive to make expert ADHD treatment affordable and accessible.</p>
             </div>
           </div>
 
@@ -848,6 +897,20 @@
               <p class="wbs-accordion-3-description">Common signs include trouble following instructions, difficulty sitting still, frequent forgetfulness, acting without thinking, and strong emotional reactions.<br><br>If these challenges are starting to affect schoolwork, friendships, or family life, it's a good idea to seek a professional assessment.Our team offers gentle, family-centered evaluations and therapy to help you get clear answers and supportive next steps.<br>If these challenges impact your life, an ADHD assessment can provide </p>
             </div>
           </div>
+
+          <div data-w-id="free-consultation-faq" class="wbs-accordion-3-item">
+            <div class="wbs-accordion-3-heading">
+              <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">What if I'm not sure my child needs a full ADHD assessment?</strong></h3>
+              <div class="wbs-accordion-3-icon-wrap">
+                <div class="wbs-accordion-3-icon-plus"></div>
+                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(90deg) skew(0, 0)" class="wbs-accordion-3-icon-minus"></div>
+              </div>
+            </div>
+            <div style="height:0px" class="wbs-accordion-3-content">
+              <p class="wbs-accordion-3-description"><strong>We offer a completely free 60-minute in-person session with an experienced ADHD therapist — no strings attached.</strong><br><br>If it turns out your child doesn't need a formal ADHD assessment, you won't be charged anything. This session is designed to help you make an informed decision with expert guidance, understand what's going on, and explore the best next steps for your child and family.<br><br>You only pay if we both agree that a full assessment is necessary. It's a risk-free way to get clarity and support from a real professional.</p>
+            </div>
+          </div>
+
           <div data-w-id="0ee6a4e5-402d-d21e-8288-be385f30c918" class="wbs-accordion-3-item">
             <div class="wbs-accordion-3-heading">
               <h3 class="wbs-accordion-3-title"><strong class="wbs-accordion-3-title">Is therapy covered by insurance?</strong></h3>
@@ -936,6 +999,12 @@
           <a href="https://www.psychologytoday.com/ca/therapists/roots-and-tales-clinic-richmond-hill-on/1278486" class="w-inline-block"><img sizes="(max-width: 1600px) 100vw, 1600px" srcset="images/pt-p-500.webp 500w, images/pt-p-800.webp 800w, images/pt-p-1080.webp 1080w, images/pt.webp 1600w" alt="" src="images/pt.webp" loading="lazy" class="wbs-client-logo"></a>
           <a href="https://g.co/kgs/p3WRM5C" class="w-inline-block"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/5stargoogle-p-500.webp 500w, images/5stargoogle.webp 800w" alt="Google 5 star review" src="images/5stargoogle.webp" loading="lazy" class="wbs-client-logo-2"></a><img loading="lazy" src="images/ccpa.webp" alt="" class="wbs-client-logo-3"><img loading="lazy" src="images/crpo.webp" alt="" class="wbs-client-logo-3">
         </div>
+        <div class="wbs-spacing-31"></div>
+
+        <!-- Elfsight Google Reviews | R&T - Reviews -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-4c6dafc2-1967-47ef-a557-057104d6b353" data-elfsight-app-lazy></div>
+
         <div class="wbs-spacing-31"></div>
         <p>Roots &amp; Tales Clinic © Copyright 2025 | Created &amp; Designed by <a href="http://jcsoftware.ca/" target="_blank">JC Software<br>‍</a>By using this website, you are agreeing to our <a href="privacy-policy.html">privacy policy and terms of service</a>.</p>
       </div>
