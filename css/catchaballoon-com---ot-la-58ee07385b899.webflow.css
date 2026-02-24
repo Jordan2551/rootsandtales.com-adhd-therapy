@@ -1837,9 +1837,6 @@ strong {
 }
 
 /* Meet Our ADHD Specialists Section Styles */
-.specialists-section {
-  padding: 60px 0;
-}
 
 .specialists-subtitle {
   font-size: 18px;
@@ -2215,6 +2212,12 @@ strong {
   padding: 10px 20px;
   font-family: Inter, sans-serif;
   box-sizing: border-box;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sticky-top-bar.is-visible {
+  transform: translateY(0);
 }
 
 html, body {
@@ -2258,9 +2261,9 @@ html, body {
   fill: currentColor;
 }
 
-/* Offset the page content for the sticky bar */
+/* Offset the page content for the sticky bar — added by JS once bar is visible */
 body {
-  padding-top: 52px;
+  padding-top: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -2274,8 +2277,10 @@ body {
   }
 
   .sticky-top-bar .cta-phone,
-  .sticky-top-bar .cta-book {
-    padding: 8px 14px;
-    font-size: 13px;
+  .sticky-top-bar .cta-book,
+  .sticky-top-bar .wbs-button-primary-2 {
+    padding: 6px 10px;
+    font-size: 11px;
+    white-space: nowrap;
   }
 }

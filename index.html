@@ -70,6 +70,12 @@
       font-size: 14px;
       text-decoration: none;
     }
+    @media (max-width: 767px) {
+      .sticky-top-bar .wbs-button-primary-2 {
+        padding: 6px 10px;
+        font-size: 11px;
+      }
+    }
 @media (max-width: 767px) {
       .wbs-hero-3-title {
         font-size: 2rem !important;
@@ -97,7 +103,7 @@
         <svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
         437-660-7850
       </a>
-      <a href="https://form.typeform.com/to/DSEnFMKZ" target="_blank" class="wbs-button-primary-2">🧠 Take 3-Minute ADHD Screening</a>
+      <a id="contact-modal-open" href="#" class="wbs-button-primary-2">❤️ Book Free Consultation</a>
     </div>
   </div>
 
@@ -265,6 +271,8 @@
       <div class="wbs-feature-component">
         <div class="wbs-feature-split-2">
           <div id="w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807b3-f2ae1fda">
+            <div class="wbs-spacing-50"></div>
+
             <div class="wbs-feature-title-wrap">
               <h2 class="wbs-heading-h4 center">ADHD Treatment Services</h2>
               <p class="specialists-subtitle center">A complete suite of services to help children, teens, and adults thrive academically, socially, and emotionally.</p>
@@ -276,7 +284,6 @@
 
             </div>
 
-            <div class="wbs-spacing-60"></div>
             <div id="w-node-_72307a76-7ec2-08ec-cdd0-ae4abce807ba-f2ae1fda" class="wbs-feature-split-right">
 
               <!-- Service 1: Thorough Formal Assessment -->
@@ -1413,6 +1420,24 @@
       once: true,
       offset: 100
     });
+  </script>
+
+  <!-- Show sticky top bar only after scrolling past hero -->
+  <script>
+    (function () {
+      var bar = document.querySelector('.sticky-top-bar');
+      var hero = document.querySelector('.wbs-hero-component');
+      if (!bar || !hero) return;
+      var shown = false;
+      window.addEventListener('scroll', function () {
+        if (shown) return;
+        if (hero.getBoundingClientRect().bottom <= 0) {
+          bar.classList.add('is-visible');
+          document.body.style.paddingTop = '52px';
+          shown = true;
+        }
+      }, { passive: true });
+    })();
   </script>
 
 </body>
